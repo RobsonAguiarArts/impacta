@@ -1,0 +1,16 @@
+.bg-primary{
+  background: rgb(227,226,238);
+  background: linear-gradient(90deg, rgba(227,226,238,1) 22%, rgba(30,30,33,1) 100%, rgba(0,212,255,1) 100%);
+}
+.btn{
+  background: rgb(227,226,238);
+  background: linear-gradient(90deg, rgba(227,226,238,1) 22%, rgba(30,30,33,1) 100%, rgba(0,212,255,1) 100%);
+  padding: 10px 20px;
+  border: none;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.bem_vindo{
+  color: aliceblue;
+}

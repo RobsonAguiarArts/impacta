@@ -3,7 +3,7 @@
     body {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0 auto;
-  background-image: url(img/pizza.jpg);
+  background-image: url(pizza.jpg);
   background-size: cover;
   background-position: center;
   height: 100vh;

@@ -1,7 +1,7 @@
 <?php
 $dbHost = 'Localhost';
 $dbUsername = 'root';
-$dbPassword = '';
+$dbPassword = '123456';
 $dbName = 'formulario-login';
 
 $conexao = new mysqli($dbHost,$dbUsername,$dbPassword,$dbName);
