@@ -28,9 +28,9 @@
       $estado = $_POST['estado_forn'];
       $telefone = $_POST['telefone_forn'];
       $cnpj = $_POST['cnpj_forn'];
-      $data_nasc = $_POST['data_cadastro_forn'];
+      $data_cad = $_POST['data_cadastro_forn'];
 
-      $result = mysqli_query($conexao,"INSERT INTO fornecedores(nome_forn,email_forn,endereco_forn,bairro_forn,cidade_forn,estado_forn,telefone_forn,cnpj_forn,data_cadastro_forn) VALUES('$nome','$email','$endereco','$bairro','$cidade','$estado','$telefone','$cnpj','$data_nasc')");
+      $result = mysqli_query($conexao,"INSERT INTO fornecedores(nome_forn,email_forn,endereco_forn,bairro_forn,cidade_forn,estado_forn,telefone_forn,cnpj_forn,data_cadastro_forn) VALUES('$nome','$email','$endereco','$bairro','$cidade','$estado','$telefone','$cnpj','$data_cad')");
     }
 ?>
 <!DOCTYPE html>
@@ -47,7 +47,7 @@
 
 <body>
   <div class="box">
-    <form action="fornecedores.php" method="POST">
+    <form action="sistema.php?pg=fornecedores" method="POST">
     <fieldset>
       <div class="box_center">
       <legend>Cadastro de Fornecedores</legend>
@@ -93,7 +93,6 @@
       <div class="box_center">
       <input type="submit" name="submit" id="submit">
       </div>
-
     </fieldset>
     </form>
   </div>

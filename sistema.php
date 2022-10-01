@@ -41,16 +41,19 @@ $logado = $_SESSION['email'];
             Cadastro
           </a>
           <ul class="dropdown-menu">
-         
             <li><a class="dropdown-item"  href="sistema.php?pg=fornecedores">Cadastro de Fornecedores</a></li>
-            <li><a class="dropdown-item"  href="sistema.php?pg=relatorio_fornecedores">Relatorio de fornecedores</a></li>
-
-            <li><a class="dropdown-item" href="sistema.php?pg=produtos">Produtos</a></li>
-            <li><a class="dropdown-item" href="sistema.php?pg=relatorio_produtos">Relatorio de produtos</a></li>
-
+            <li><a class="dropdown-item" href="sistema.php?pg=produtos">Cadastro de Produtos</a></li>
           </ul>
         </li>
-      
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Relatórios
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item"  href="sistema.php?pg=relatorio_fornecedores">Relatorio de Fornecedores</a></li>
+            <li><a class="dropdown-item" href="sistema.php?pg=relatorio_produtos">Relatorio de Produtos</a></li>
+          </ul>
+        </li>
       </ul>    
         <div class="form-inline my-2 my-lg-0">
           <label class="me-3 bem_vindo" >
@@ -58,7 +61,7 @@ $logado = $_SESSION['email'];
               echo "Bem Vindo: $logado";
             ?>
           </label>
-              <a href="sair.php" class="btn  me-2">Sair</a>
+              <a href="sair.php" class="btn btn_login me-2">Sair</a>
       </div>
     </div>
   </div>
@@ -75,6 +78,10 @@ $logado = $_SESSION['email'];
       switch($pg){
         case'produtos': require 'produtos.php';break;
         case'fornecedores': require 'fornecedores.php';break;
+        case'relatorio_fornecedores': require 'relatorio_fornecedores.php';break;
+        case'edit': require 'edit.php';break;
+        case'saveEdit': require 'saveEdit.php';break;
+
         default: require'home.php';
       }
     ?>

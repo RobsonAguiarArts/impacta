@@ -76,10 +76,10 @@ background: linear-gradient(90deg, rgba(35,35,38,1) 0%, rgba(84,83,97,1) 0%);
   justify-content:center ;
   
 }
-#submit {
+#submit, #update, .back {
   background: rgb(227,226,238);
   background: linear-gradient(90deg, rgba(227,226,238,1) 22%, rgba(30,30,33,1) 100%, rgba(0,212,255,0) 100%);
-  width: 20%;
+  
   padding: 15px;
   border: none;
   border-radius: 8px;
@@ -89,10 +89,17 @@ background: linear-gradient(90deg, rgba(35,35,38,1) 0%, rgba(84,83,97,1) 0%);
   text-transform: uppercase;
   cursor: pointer;
   margin-top: 20px;
+  text-decoration: none;
 }
-#submit:hover {
+#submit:hover, #update:hover {
   color: #fff;
   background: rgb(35,35,38);
 background: linear-gradient(90deg, rgba(35,35,38,1) 0%, rgba(84,83,97,1) 0%);}
+.back{
+  display: inline-block;
+  background: aqua;
+  margin-top: 20px;
+  
+}
 
   
