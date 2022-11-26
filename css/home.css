@@ -1,0 +1,30 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(
+    to right,
+    rgba(255, 0, 0, 0.8),
+    rgba(255, 136, 0, 0.6)
+  );
+  text-align: center;
+  color: #fff;
+}
+.box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 30px;
+  border-radius: 15px;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+  border: 3px solid orangered;
+  padding: 10px;
+  border-radius: 10px;
+  text-transform: uppercase;
+}
+a:hover {
+  background-color: orangered;
+}

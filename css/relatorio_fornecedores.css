@@ -1,0 +1,19 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: rgb(35,35,38);
+  background: linear-gradient(90deg, rgba(35,35,38,1) 0%, rgba(84,83,97,1) 0%);
+}
+.box_title{
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
+  margin: 40px 40px;
+}
+.table-bg {
+  margin:40px 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 15px 15px 0 0;
+}
+
+  

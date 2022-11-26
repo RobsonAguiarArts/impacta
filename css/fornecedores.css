@@ -1,0 +1,105 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: rgb(35,35,38);
+  background: linear-gradient(90deg, rgba(35,35,38,1) 0%, rgba(84,83,97,1) 0%);
+}
+.box {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  border-radius: 15px;
+  color: #fff;
+  width: 50%;
+  font-size: 15px;
+}
+fieldset {
+  border: 2px solid rgb(227,226,238);
+  padding: 20px;
+}
+legend {
+  border: 1px solid  rgb(227,226,238);
+  padding: 8px;
+  text-align: center;
+  background: rgb(35,35,38);
+background: linear-gradient(90deg, rgba(35,35,38,1) 0%, rgba(84,83,97,1) 0%);
+  border-radius: 8px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  width: 50%;
+  color:rgb(227,226,238); 
+  text-transform: uppercase;
+}
+.inputBox {
+  position: relative;
+}
+.genero {
+  margin: 10px 0;
+}
+.inputUser {
+  margin: 15px 0;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  color: #fff;
+  font-size: 15px;
+  width: 100%;
+  letter-spacing: 2px;
+}
+.labelInput {
+  position: absolute;
+  top: 0px;
+  pointer-events: none;
+  transition: 0.5s;
+}
+.inputUser:focus ~ .labelInput,
+.inputUser:valid ~ .labelInput {
+  top: -20px;
+  font-size: 12px;
+  color: orangered;
+}
+#data_nascimento {
+  border: none;
+  padding: 8px;
+  border-radius: 10px;
+  outline: none;
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+.box_center{
+  display: flex;
+  justify-content:center ;
+  
+}
+#submit, #update, .back {
+  background: rgb(227,226,238);
+  background: linear-gradient(90deg, rgba(227,226,238,1) 22%, rgba(30,30,33,1) 100%, rgba(0,212,255,0) 100%);
+  
+  padding: 15px;
+  border: none;
+  border-radius: 8px;
+  color: #000;
+  font-size: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin-top: 20px;
+  text-decoration: none;
+}
+#submit:hover, #update:hover {
+  color: #fff;
+  background: rgb(35,35,38);
+background: linear-gradient(90deg, rgba(35,35,38,1) 0%, rgba(84,83,97,1) 0%);}
+.back{
+  display: inline-block;
+  background: aqua;
+  margin-top: 20px;
+  
+}
+
+  
